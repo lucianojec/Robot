@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200206 20:00:02.937" rpa="false">
+<suite id="s1" name="Notepad" source="C:\RobotTests\Notepad\notepad.robot">
+<test id="s1-t1" name="Calculadora">
+<kw name="Abrir calculadora">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>calc.exe</arg>
+</arguments>
+<msg timestamp="20200206 20:00:03.300" level="INFO">AutoItLibrary.Run(FileName='calc.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20200206 20:00:03.290" endtime="20200206 20:00:03.300"></status>
+</kw>
+<kw name="Wait For Active Window" library="AutoItLibrary">
+<doc>Wait up to _TimeOut_ seconds for the window with the given _WindowTitle_ and optional
+_WindowText_ to appear. Force this to be the active window after it appears.  Optionally do a
+full screen capture on failure.</doc>
+<arguments>
+<arg>Calculadora</arg>
+</arguments>
+<msg timestamp="20200206 20:00:04.093" level="INFO">AutoItLibrary.WaitForActiveWindow(WindowTitle='Calculadora', WindowText='', TimeOut=-1)</msg>
+<msg timestamp="20200206 20:00:04.093" level="INFO">AutoItLibrary.WinWait(WindowTitle='Calculadora', WindowText='', TimeOut=60)</msg>
+<msg timestamp="20200206 20:00:04.093" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='Calculadora', WindowText='', TimeOut=60)</msg>
+<status status="PASS" starttime="20200206 20:00:03.300" endtime="20200206 20:00:04.093"></status>
+</kw>
+<status status="PASS" starttime="20200206 20:00:03.290" endtime="20200206 20:00:04.094"></status>
+</kw>
+<kw name="Fechar calculadora">
+<kw name="Win Close" library="AutoItLibrary">
+<doc>method WinClose</doc>
+<arguments>
+<arg>Calculadora</arg>
+</arguments>
+<status status="PASS" starttime="20200206 20:00:04.096" endtime="20200206 20:00:04.349"></status>
+</kw>
+<status status="PASS" starttime="20200206 20:00:04.095" endtime="20200206 20:00:04.350"></status>
+</kw>
+<kw name="Envia Email">
+<kw name="Run" library="AutoItLibrary">
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<arguments>
+<arg>EnviaEmail.bat</arg>
+</arguments>
+<msg timestamp="20200206 20:00:04.383" level="INFO">AutoItLibrary.Run(FileName='EnviaEmail.bat', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20200206 20:00:04.353" endtime="20200206 20:00:04.384"></status>
+</kw>
+<status status="PASS" starttime="20200206 20:00:04.352" endtime="20200206 20:00:04.384"></status>
+</kw>
+<status status="PASS" starttime="20200206 20:00:03.289" endtime="20200206 20:00:04.394" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200206 20:00:02.969" endtime="20200206 20:00:04.399"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Notepad">Notepad</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
